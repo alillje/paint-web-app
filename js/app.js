@@ -87,3 +87,7 @@ function drawDot(x, y) {
   ctx.arc(x, y, brushSize / 2, 0, Math.PI * 2);
   ctx.fill();
 }
+
+document.getElementById("resetCanvas").addEventListener("click", () => {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+});
