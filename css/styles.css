@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.controls {
+  padding: 10px;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.controls input[type="range"] {
+  vertical-align: middle;
+}
+
+.color-btn {
+  width: 24px;
+  height: 24px;
+  margin: 0 4px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+}
+
+canvas {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  display: block;
+}
