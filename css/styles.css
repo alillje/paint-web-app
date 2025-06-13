@@ -9,7 +9,7 @@ html, body {
 }
 
 .controls {
-  padding: 10px;
+  padding: 20px;
   background: #f0f0f0;
   display: flex;
   flex-direction: column;
@@ -19,14 +19,27 @@ html, body {
 
 .controls input[type="range"] {
   vertical-align: middle;
+  height: 10px;
+  width: 200px;
+  accent-color: #444;
+  padding: 15px;
 }
 
 .color-btn {
-  width: 24px;
-  height: 24px;
-  margin: 0 4px;
-  border: 2px solid #ccc;
+  aspect-ratio: 1 / 1;
+  width: 45px;
+  border: 2px solid #999;
+  border-radius: 50%;
   cursor: pointer;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  padding: 0;
+  display: inline-block;
+}
+
+.color-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 canvas {
